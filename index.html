@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Munir Zakaria | Senior Human Resources Leader</title>
+<meta name="description" content="Portfolio of Munir Zakaria, a Senior Human Resources Leader specializing in Strategic HR Professional, crisis workforce management, and international recruitment.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+<style>
+    /* =========================================
+       1. CORE VARIABLES & RESET
+       ========================================= */
+    :root {
+        --primary: #0B1F3B;
+        --accent: #C6A14A;
+        --light: #f5f7fa;
+        --bg-alt: #f8f9fb;
+        --text-main: #1e293b;
+        
+        /* Spacing System */
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2.5rem;
+        --space-xl: 4rem;
+        
+        /* Layout */
+        --nav-height: 70px;
+        --container-max: 1280px; 
+        --font-main: 'Inter', sans-serif;
+        
+        /* Effects */
+        --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        --radius-lg: 16px;
+        --radius-md: 12px;
+        --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        --color-text-muted: #64748b;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--nav-height) + 20px);
+        font-size: 16px;
+    }
+
+    body {
+        font-family: var(--font-main);
+        font-weight: 400;
+        line-height: 1.6;
+        background-color: var(--light);
+        color: var(--text-main);
+        padding-top: var(--nav-height);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Accessibility: Focus */
+    :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    /* =========================================
+       2. LAYOUT UTILITIES – UNIFIED CONTAINER SYSTEM
+       ========================================= */
+    .container {
+        width: 92%;
+        max-width: var(--container-max);
+        margin: 0 auto;
+        padding: 5rem 0;
+        position: relative;
+    }
+
+    /* Small mobile adjustment: slightly wider padding on container edges */
+    @media (max-width: 480px) {
+        .container {
+            width: 94%;
+            padding: 3.5rem 0;
+        }
+    }
+
+    /* Ensure all sections use the container system consistently */
+    .hero .container,
+    .content-section .container,
+    .contact-wrapper .container,
+    footer .container {
+        width: 92%;
+        max-width: var(--container-max);
+        margin: 0 auto;
+    }
+
+    /* Section backgrounds should extend full width, but content stays in container */
+    .hero, .content-section, .contact-wrapper, footer {
+        width: 100%;
+    }
+
+    /* Remove any full-width content that bypassed container */
+    .section-separator {
+        margin-top: 3rem;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(198, 161, 74, 0.3), transparent);
+        opacity: 0.6;
+    }
+
+    /* =========================================
+       3. TYPOGRAPHY – ensure headings consistent
+       ========================================= */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-main);
+        color: var(--primary);
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        text-align: center;
+        display: block;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 600;
+        margin: 3rem auto 1.5rem;
+        padding-bottom: 15px;
+        position: relative;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: var(--accent);
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+
+    h3 {
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        font-weight: 600;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.05rem;
+        color: #475569;
+        text-align: left;
+    }
+
+    ul.bullet-list {
+        margin-bottom: 1.5rem;
+        padding-left: 1.25rem;
+        text-align: left;
+    }
+    ul.bullet-list li {
+        margin-bottom: 0.75rem;
+        font-size: 1.05rem;
+        color: #334155;
+        padding-left: 0.5rem;
+    }
+
+    /* =========================================
+       4. INTERACTIVE COMPONENTS – unchanged but safe
+       ========================================= */
+    .grid--auto-fit {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--space-md);
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: 1px solid #f1f5f9;
+        border-radius: var(--radius-lg);
+        padding: var(--space-lg);
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition-smooth);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 4px;
+        background: linear-gradient(90deg, var(--accent), #dfc078);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+        border-color: rgba(198, 161, 74, 0.3);
+    }
+    .card:hover::before { opacity: 1; }
+
+    .card__icon {
+        font-size: 2.5rem;
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    .card:hover .card__icon { transform: scale(1.1); }
+
+    .card__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+
+    .card__body {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+    }
+
+    /* =========================================
+       5. METRICS & SKILLS – no change
+       ========================================= */
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .metric-card {
+        background-color: #fff;
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        border: 1px solid #f1f5f9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .metric-value {
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        font-weight: 700;
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+
+    /* =========================================
+       6. SECTIONS & HERO – REDESIGNED CENTERED LAYOUT
+       ========================================= */
+    .hero {
+        min-height: calc(100vh - var(--nav-height));
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #ffffff;
+        /* Modern subtle mesh gradient background */
+        background-image: 
+            radial-gradient(circle at 50% 50%, rgba(198, 161, 74, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 0% 0%, rgba(11, 31, 59, 0.04) 0%, transparent 50%);
+    }
+
+    .hero .container {
+        /* Redesigned to single column, centered, constrained width */
+        display: block; 
+        text-align: center; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-text-wrapper {
+        text-align: center; 
+        width: 100%;
+        z-index: 2;
+    }
+
+    .hero h1 {
+        text-align: center;
+        line-height: 1.2; /* Tighter for center */
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Highlight accent in H1 */
+    .hero h1 span {
+        color: var(--accent);
+        display: inline-block; /* Allow it to flow naturally */
+    }
+
+    .hero .subtitle { 
+        font-size: 1.35rem;
+        font-weight: 500;
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+        text-align: center;
+        /* Redesigned underline for centered text */
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+
+    .hero .subheadline { 
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--accent);
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        line-height: 1.6;
+        text-align: center;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero .cta-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        justify-content: center; /* Center buttons */
+    }
+
+    /* Hero Visual Side (Right Column) - REMOVED FROM HTML, CSS KEPT FOR SAFETY */
+    .hero-visual-wrapper {
+        display: none; /* Explicitly hidden to ensure clean layout */
+    }
+
+    .content-section {
+        background: white;
+        border-bottom: 1px solid transparent; 
+    }
+    .content-section:nth-of-type(even) { background-color: var(--bg-alt); }
+
+    /* =========================================
+       7. BUTTONS
+       ========================================= */
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+        width: auto;
+        min-width: fit-content;
+    }
+
+    .btn i { margin-right: 8px; }
+    
+    .btn-primary {
+        background-color: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+    .btn-primary:hover {
+        background-color: transparent;
+        color: var(--primary);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        color: var(--primary);
+        border-color: var(--primary);
+    }
+    .btn-secondary:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    .btn-accent {
+        background-color: transparent;
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+    .btn-accent:hover {
+        background-color: var(--accent);
+        color: white;
+    }
+    
+    .btn-full {
+        width: 100%;
+    }
+    
+    .btn-lg {
+        padding: 16px 40px;
+        font-size: 1.1rem;
+    }
+
+    /* =========================================
+       8. PROFESSIONAL PROFILE (REDESIGNED)
+       ========================================= */
+    .profile-intro-wrapper {
+        background: linear-gradient(135deg, #fff 0%, #fffbf0 100%);
+        border: 1px solid rgba(198, 161, 74, 0.2);
+        padding: 2.5rem 2rem;
+        border-radius: 12px;
+        border-left: 5px solid var(--accent);
+        margin: 0 auto 3rem auto;
+        max-width: 900px;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+        text-align: left;
+    }
+
+    .profile-intro-wrapper p {
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--primary);
+        line-height: 1.7;
+    }
+
+    /* Specific overrides for Profile Cards */
+    #profile .card {
+        align-items: flex-start; /* Left align content */
+        text-align: left;
+        padding: 2.5rem; /* More padding */
+        height: 100%;
+    }
+
+    #profile .card__icon {
+        /* Contained Icon Style */
+        font-size: 1.8rem;
+        width: 60px;
+        height: 60px;
+        background-color: var(--primary);
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(11, 31, 59, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    #profile .card:hover .card__icon {
+        transform: translateY(-3px);
+        background-color: var(--accent);
+        color: white;
+    }
+
+    #profile .card__title {
+        text-align: left;
+        font-size: 1.35rem;
+        margin-bottom: 1rem;
+    }
+
+    #profile .card__body {
+        text-align: left;
+        color: #475569;
+        font-size: 1rem;
+    }
+
+    /* =========================================
+       9. EXPERIENCE & CARDS - REDESIGNED
+       ========================================= */
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .exp-card {
+        background-color: #ffffff;
+        border-radius: var(--radius-md);
+        padding: 1.75rem;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition-smooth);
+        border: 1px solid #f1f5f9;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .exp-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent), #e9d49c);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .exp-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: rgba(198, 161, 74, 0.2);
+    }
+
+    .exp-card:hover::before {
+        opacity: 1;
+    }
+
+    .exp-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid rgba(198, 161, 74, 0.15);
+        padding-bottom: 1rem;
+    }
+
+    .exp-icon {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(198, 161, 74, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+    }
+
+    .exp-card:hover .exp-icon {
+        background-color: var(--accent);
+        color: white;
+    }
+
+    .exp-title {
+        flex: 1;
+    }
+
+    .exp-role {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary);
+        line-height: 1.3;
+        margin-bottom: 0.25rem;
+    }
+
+    .exp-org {
+        font-size: 0.9rem;
+        color: var(--accent);
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+
+    .exp-period {
+        font-size: 0.8rem;
+        color: var(--color-text-muted);
+        font-weight: 500;
+        display: inline-block;
+        background: #f1f5f9;
+        padding: 0.2rem 0.6rem;
+        border-radius: 20px;
+    }
+
+    .exp-badge {
+        display: inline-block;
+        background-color: rgba(198, 161, 74, 0.1);
+        color: var(--accent);
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        align-self: flex-start;
+    }
+
+    .exp-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+
+    .exp-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.85rem;
+        font-size: 0.95rem;
+        color: #475569;
+        line-height: 1.5;
+    }
+
+    .exp-list li i {
+        color: var(--accent);
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+        flex-shrink: 0;
+        width: 16px;
+        text-align: center;
+    }
+
+    .exp-list li span {
+        flex: 1;
+    }
+
+    .exp-footer {
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed rgba(198, 161, 74, 0.2);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .exp-tag {
+        font-size: 0.7rem;
+        color: var(--color-text-muted);
+        background: #f8fafc;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+    }
+
+    /* Responsive adjustments for experience grid */
+    @media (max-width: 768px) {
+        .experience-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .experience-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* =========================================
+       10. EDUCATION & TIMELINE (REDESIGNED)
+       ========================================= */
+    .edu-layout-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem; /* Increased gap for breathing room */
+        align-items: start;
+    }
+
+    /* New Timeline Style: Card-based instead of vertical line */
+    .edu-timeline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 0; /* Removed padding for line */
+        border-left: none; /* Removed vertical line */
+    }
+
+    .timeline-item {
+        position: relative;
+        background-color: #ffffff;
+        padding: 1.5rem 1.75rem;
+        border-radius: 12px;
+        border: 1px solid #f1f5f9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        transition: all 0.3s ease;
+        /* Accent bar on the left */
+        border-left: 4px solid var(--accent);
+    }
+
+    .timeline-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .timeline-year {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        background: rgba(11, 31, 59, 0.05);
+        padding: 4px 8px;
+        border-radius: 4px;
+        letter-spacing: 0.5px;
+    }
+
+    .timeline-degree {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        line-height: 1.3;
+        text-align: left;
+    }
+
+    .timeline-school {
+        font-size: 0.95rem;
+        color: var(--color-text-muted);
+        font-weight: 500;
+        text-align: left;
+    }
+
+    /* Redesigned Credential Card */
+    .credential-card {
+        background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
+        border: 1px solid rgba(198, 161, 74, 0.25);
+        padding: 2rem;
+        border-radius: var(--radius-lg);
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 0 4px 20px rgba(198, 161, 74, 0.08);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Subtle pattern for credential */
+    .credential-card::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(rgba(198, 161, 74, 0.05) 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .credential-icon { 
+        font-size: 2.5rem; 
+        color: var(--accent);
+        background: #fff;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        z-index: 1;
+    }
+
+    .credential-info {
+        text-align: center;
+        z-index: 1;
+    }
+
+    .credential-info h4 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
+
+    .credential-info p {
+        margin: 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #64748b;
+    }
+
+    /* Redesigned Specialization Container */
+    .specialization-container {
+        text-align: center;
+        margin-top: 3rem;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px dashed #e2e8f0;
+    }
+
+    .specialization-container h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+    
+    .tag-cloud { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 0.6rem; 
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    .spec-tag {
+        background-color: #f8fafc;
+        color: var(--primary);
+        padding: 0.4rem 0.9rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        transition: all 0.2s;
+        border: 1px solid #f1f5f9;
+    }
+    .spec-tag:hover {
+        background-color: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+        transform: translateY(-2px);
+    }
+
+    /* Sticky Sidebar for Desktop */
+    .edu-sidebar {
+        position: sticky;
+        top: calc(var(--nav-height) + 2rem);
+    }
+
+    .philosophy-card {
+        background: #fff;
+        padding: 2.5rem 2rem;
+        border-radius: var(--radius-lg);
+        border-top: 4px solid var(--accent);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    .philosophy-text {
+        font-size: 1.1rem;
+        font-style: italic;
+        color: var(--text-main);
+        line-height: 1.7;
+        font-weight: 500;
+    }
+    .philosophy-author {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--accent);
+        font-style: normal;
+    }
+
+    .lang-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+    
+    .lang-card {
+        background: #fff;
+        padding: 1rem 1.25rem;
+        border-radius: 8px;
+        border: 1px solid #f1f5f9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: border-color 0.2s;
+    }
+    
+    .lang-card:hover {
+        border-color: rgba(198, 161, 74, 0.4);
+    }
+    
+    .lang-name { font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+    
+    .lang-level {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 20px;
+        letter-spacing: 0.3px;
+    }
+    
+    .lang-level.fluent { background-color: #10b981; box-shadow: 0 2px 5px rgba(16, 185, 129, 0.2); }
+    .lang-level.intermediate { background-color: #f59e0b; color: #fff; box-shadow: 0 2px 5px rgba(245, 158, 11, 0.2); }
+
+    /* =========================================
+       11. CONTACT SECTION (REDESIGNED)
+       ========================================= */
+    .contact-content {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .contact-card-item {
+        background: #ffffff;
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid #f1f5f9;
+        transition: var(--transition-smooth);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-card-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: rgba(198, 161, 74, 0.3);
+    }
+
+    .contact-icon-large {
+        width: 64px;
+        height: 64px;
+        background-color: rgba(198, 161, 74, 0.1);
+        color: var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact-card-item:hover .contact-icon-large {
+        background-color: var(--accent);
+        color: white;
+    }
+
+    .contact-card-item h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .contact-card-item p,
+    .contact-card-item a {
+        font-size: 0.95rem;
+        color: #64748b;
+        text-decoration: none;
+        margin: 0;
+        transition: color 0.2s;
+    }
+    
+    .contact-card-item a:hover {
+        color: var(--accent);
+    }
+
+    /* =========================================
+       12. NAVIGATION – REDESIGNED HEADER
+       ========================================= */
+    .navbar {
+        position: fixed;
+        top: 0; left: 0; width: 100%;
+        height: var(--nav-height);
+        /* Glassmorphism / Frosted Glass Effect */
+        background-color: rgba(11, 31, 59, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        z-index: 1000;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, border-bottom-color 0.3s ease;
+    }
+
+    .navbar.scrolled {
+        /* More opaque when scrolled for readability over white content */
+        background-color: rgba(11, 31, 59, 0.98);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-container {
+        width: 92%;
+        max-width: var(--container-max);
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-logo {
+        color: white;
+        font-size: 1.5rem; /* Slightly larger */
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: -0.5px; /* Tighter, premium feel */
+        z-index: 1002;
+        transition: opacity 0.3s ease;
+    }
+    .nav-logo:hover { opacity: 0.9; }
+    .nav-logo span { 
+        color: var(--accent); 
+        font-weight: 800; /* Heavier weight for emphasis */
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem; /* Slightly tighter gap for cleaner look */
+    }
+
+    .nav-link {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        padding: 8px 16px; /* Pill shape padding */
+        border-radius: 30px;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active { 
+        color: #fff; 
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle pill bg on hover */
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0; height: 2px;
+        bottom: 4px; /* Moved underline down slightly */
+        left: 0;
+        background-color: var(--accent);
+        transition: width 0.3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    .hamburger { 
+        display: none; 
+        cursor: pointer; 
+        background: none; 
+        border: none; 
+        padding: 0.5rem;
+        z-index: 1002;
+    }
+    .bar {
+        display: block; width: 26px; height: 3px; /* Slightly thicker bars */
+        margin: 6px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        border-radius: 3px; /* Rounded ends */
+    }
+
+    /* =========================================
+       13. FOOTER – REDESIGNED
+       ========================================= */
+    footer {
+        background-color: var(--primary);
+        color: rgba(255, 255, 255, 0.85);
+        padding: 4rem 0 0 0;
+        font-size: 0.95rem;
+        border-top: 5px solid var(--accent); /* Strong accent separator */
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-brand h3 {
+        font-family: var(--font-main);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: #fff;
+    }
+
+    .footer-brand h3 span {
+        color: var(--accent);
+    }
+
+    .footer-brand p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .footer-heading {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+
+    .footer-heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30px;
+        height: 2px;
+        background-color: var(--accent);
+    }
+
+    .footer-links {
+        list-style: none;
+        text-align: left;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.85rem;
+    }
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-links a i {
+        width: 20px;
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .footer-links a:hover {
+        color: var(--accent);
+        padding-left: 5px; /* Subtle slide effect */
+    }
+    
+    .contact-info-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info-item i {
+        color: var(--accent);
+        margin-top: 4px;
+        margin-right: 12px;
+        width: 18px;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 0.85rem;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .footer-socials a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-socials a:hover {
+        color: #fff;
+        background-color: var(--accent);
+        transform: translateY(-3px);
+    }
+
+    /* =========================================
+       14. ANIMATIONS – no change
+       ========================================= */
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+    .delay-100 { transition-delay: 0.1s; }
+    .delay-200 { transition-delay: 0.2s; }
+    .delay-300 { transition-delay: 0.3s; }
+
+    #profile .reveal-on-scroll > p {
+        text-align: center;
+    }
+
+    #skills h3 {
+        text-align: center;
+    }
+
+    /* =========================================
+       15. RESPONSIVE BREAKPOINTS – adjusted for consistency
+       ========================================= */
+    
+    @media (min-width: 1024px) {
+        .edu-layout-grid {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        :root { --container-max: 1400px; }
+        .container { padding: 6rem 0; }
+        .card { padding: 3rem; }
+        .nav-menu { gap: 2rem; }
+    }
+
+    @media (max-width: 1023px) {
+        .nav-menu { gap: 1rem; }
+        .cta-container { flex-direction: row; flex-wrap: wrap; }
+        .btn { flex: 1 1 auto; }
+        
+        .edu-sidebar {
+            position: static; /* Disable sticky on tablet */
+            margin-top: 2rem;
+        }
+        
+        /* Footer Adjustments */
+        .footer-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        .footer-brand {
+            grid-column: span 2;
+            text-align: center;
+        }
+        .footer-brand h3, .footer-brand p {
+            text-align: center;
+        }
+        
+        /* UPDATED: Align Quick Links to the Left as requested */
+        .footer-heading::after {
+            left: 0; 
+            transform: none; /* Reset the centering transform */
+        }
+        .footer-links {
+            text-align: left; /* Align text left */
+        }
+        .footer-links a {
+            justify-content: flex-start; /* Align items left */
+        }
+    }
+
+    @media (max-width: 992px) {
+        /* Hero is now centered everywhere, so this override is removed/standardized */
+        
+        /* Profile Card Reset for Tablet/Mobile */
+        #profile .card {
+            align-items: center;
+            text-align: center;
+        }
+        
+        #profile .card__title {
+            text-align: center;
+        }
+        
+        #profile .card__body {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 767px) {
+        /* Container width already unified */
+        .grid--auto-fit { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+        
+        .hamburger { display: block; }
+        .nav-menu {
+            position: fixed;
+            left: -100%; top: var(--nav-height);
+            flex-direction: column;
+            background-color: var(--primary);
+            width: 100%;
+            height: calc(100vh - var(--nav-height));
+            text-align: center;
+            transition: 0.3s ease-in-out;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .nav-menu.active { left: 0; }
+        .nav-link { display: block; padding: 15px 0; font-size: 1.1rem; width: 100%; }
+        
+        .hamburger.active .bar:nth-child(2) { opacity: 0; }
+        .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+        .cta-container { flex-direction: column; }
+        .btn { width: 100%; }
+
+        .edu-sidebar {
+            position: static;
+        }
+        
+        .credential-card { 
+            flex-direction: column; 
+            text-align: center; 
+        }
+        .credential-info h4 { 
+            text-align: center; 
+        }
+        
+        /* Footer Mobile Adjustments */
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .footer-brand {
+            grid-column: span 1;
+        }
+        .footer-bottom {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        :root { --nav-height: 60px; }
+        
+        html { font-size: 15px; }
+        
+        body { padding-top: var(--nav-height); }
+        
+        /* container unified via earlier override */
+        
+        h1 { margin-bottom: 1rem; }
+        .subtitle { font-size: 1.1rem; }
+        
+        .grid--auto-fit { grid-template-columns: 1fr; }
+        .metrics-grid { grid-template-columns: 1fr; }
+        
+        .card { padding: 1.5rem; }
+        .card__icon { font-size: 2rem; }
+        
+        .contact-cards-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+        .reveal-on-scroll { opacity: 1; transform: none; }
+    }
+
+    /* =========================================
+       SLIGHTLY REDESIGNED CORE EXPERTISE (only layout/styling, no data change)
+       ========================================= */
+    
+    /* 1. Redesigned Category Headers (H3) into Badge Style */
+    #skills h3 {
+        text-align: left;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        
+        /* Badge Styling */
+        display: inline-block;
+        background-color: #ffffff;
+        color: var(--primary);
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        border: 1px solid rgba(198, 161, 74, 0.2);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        position: relative;
+        z-index: 1;
+    }
+
+    /* 2. Grid Layout for Skills */
+    #skills .skill-list {
+        display: grid;
+        /* Slightly wider minmax for better card fit */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    
+    /* 3. Individual Skill Card Design */
+    #skills .skill-list li {
+        background: #ffffff;
+        border: 1px solid #f1f5f9;
+        border-radius: 12px;
+        padding: 1.25rem;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        height: 100%; /* Ensure equal height in grid rows */
+    }
+
+    /* Hover Effect */
+    #skills .skill-list li:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(198, 161, 74, 0.1);
+        background: #fff;
+    }
+
+    /* 4. Redesigned Icon Wrapper (Circle) */
+    #skills .skill-list li i {
+        background-color: rgba(198, 161, 74, 0.08); /* Lighter bg initially */
+        color: var(--accent);
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Perfect Circle */
+        font-size: 1.1rem;
+        margin-right: 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+    /* Icon Hover Interaction */
+    #skills .skill-list li:hover i {
+        background-color: var(--accent);
+        color: #fff;
+        transform: rotate(5deg) scale(1.1); /* S playful movement */
+    }
+
+    /* 5. Typography for Skill Text */
+    #skills .skill-text {
+        font-weight: 600;
+        color: var(--primary);
+        font-size: 1rem;
+    }
+    
+    /* Technical Badge Container Adjustment */
+    .tech-badge-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0 3rem 0;
+        background: #ffffff;
+        padding: 2.5rem 2rem;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        border: 1px solid #f1f5f9;
+    }
+    
+    .tech-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #fff;
+        border: 1.5px solid var(--accent);
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 60px;
+        box-shadow: 0 2px 8px rgba(198, 161, 74, 0.1);
+        transition: var(--transition-smooth);
+    }
+    
+    .tech-badge i {
+        color: var(--accent);
+        font-size: 1.1rem;
+    }
+    
+    .tech-badge:hover {
+        background-color: var(--accent);
+        color: white;
+        transform: translateY(-4px);
+        border-color: var(--accent);
+        box-shadow: 0 10px 20px rgba(198, 161, 74, 0.2);
+    }
+    
+    .tech-badge:hover i {
+        color: white;
+    }
+    
+    /* Adjust for smaller screens */
+    @media (max-width: 640px) {
+        .tech-badge {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+        .tech-badge-container {
+            padding: 1.5rem 1rem;
+            gap: 0.75rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">Munir<span>Zakaria</span></a>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#profile" class="nav-link">Profile</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Expertise</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <!-- Centered Content Wrapper -->
+        <div class="hero-text-wrapper reveal-on-scroll">
+            <h1>Munir Zakaria, <span style="display:block; color: var(--accent);">MBA | CIPD Assoc</span></h1>
+            <p class="subtitle delay-100">HR Professional</p>
+            <!-- TEXT UPDATED HERE -->
+            <p class="subheadline delay-200">Strategic HR Professional | Crisis Workforce Management | International Recruitment | Organizational Transformation</p>
+            <div class="cta-container delay-300">
+                <!-- LinkedIn Button Highlighted (Accent/Gold Background) -->
+                <a href="https://www.linkedin.com/in/munir-zakaria-flnstpm-603318a8/?locale=%3D" target="_blank" class="btn btn-accent">
+                    <i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn
+                </a>
+                <!-- Schedule Button Secondary (Blue Outline) -->
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fa-regular fa-calendar-check"></i> Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Profile Section -->
+<section id="profile" class="content-section">
+    <div class="container">
+        <h2 class="reveal-on-scroll">Professional Profile</h2>
+        
+        <!-- Redesigned Intro Wrapper -->
+        <div class="profile-intro-wrapper reveal-on-scroll delay-100">
+            <p>
+                I am a Human Resources practitioner with extensive experience in UN system operations, humanitarian missions, and international development environments. My leadership is defined by a commitment to strategic workforce alignment and operational resilience.
+            </p>
+        </div>
+
+        <div class="grid grid--auto-fit">
+            <!-- Pillar 1 -->
+            <div class="card reveal-on-scroll">
+                <i class="fa-solid fa-chess-knight card__icon"></i>
+                <h3 class="card__title">Strategic HR Leadership</h3>
+                <p class="card__body">
+                    Driving organizational transformation through comprehensive policy development, change management, and the alignment of workforce strategy with mission-critical humanitarian objectives.
+                </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="card reveal-on-scroll delay-100">
+                <i class="fa-solid fa-hands-holding-circle card__icon"></i>
+                <h3 class="card__title">Crisis & Workforce Resilience</h3>
+                <p class="card__body">
+                    Ensuring operational continuity in high-risk environments via emergency staffing protocols, evacuation coordination, and robust staff welfare systems during complex emergencies.
+                </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="card reveal-on-scroll delay-200">
+                <i class="fa-solid fa-globe card__icon"></i>
+                <h3 class="card__title">Global Talent Operations</h3>
+                <p class="card__body">
+                    Optimizing international recruitment pipelines and HR systems to secure top-tier talent and streamline cross-border workforce deployment for large-scale missions.
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" class="reveal-on-scroll">
+            <p>Throughout my career, I have supported complex field operations, peacekeeping missions, and large-scale humanitarian responses, ensuring that workforce systems remain resilient, compliant, and strategically aligned.</p>
+        </div>
+
+        <h2 style="margin-top: 5rem;" class="reveal-on-scroll">Impact Snapshot</h2>
+        
+        <div class="metrics-grid">
+            <div class="metric-card reveal-on-scroll">
+                <div class="metric-value">20+</div>
+                <div class="metric-desc">Years in International HR</div>
+            </div>
+            <div class="metric-card reveal-on-scroll delay-100">
+                <div class="metric-value">1000+</div>
+                <div class="metric-desc">Staff supported across missions</div>
+            </div>
+            <div class="metric-card reveal-on-scroll delay-200">
+                <div class="metric-value">£5M+</div>
+                <div class="metric-desc">Budget Oversight</div>
+            </div>
+            <div class="metric-card reveal-on-scroll">
+                <div class="metric-value">40%</div>
+                <div class="metric-desc">Recruitment Efficiency Gain</div>
+            </div>
+            <div class="metric-card reveal-on-scroll delay-100">
+                <div class="metric-value">Crisis HR</div>
+                <div class="metric-desc">COVID-19 & Field Ops</div>
+            </div>
+            <div class="metric-card reveal-on-scroll delay-200">
+                <div class="metric-value">Multi-Country</div>
+                <div class="metric-desc">Sudan, CAR, Regional</div>
+            </div>
+        </div>
+
+        <div class="section-separator"></div>
+    </div>
+</section>
+
+<!-- Core Expertise Section - slightly redesigned (only appearance, no data change) -->
+<section id="skills" class="content-section">
+    <div class="container">
+        <h2 class="reveal-on-scroll">Core Expertise</h2>
+
+        <h3 class="reveal-on-scroll">Strategic HR Leadership</h3>
+        <ul class="skill-list reveal-on-scroll">
+            <li><i class="fa-solid fa-chess-board"></i> <span class="skill-text">HR Strategy Development</span></li>
+            <li><i class="fa-solid fa-people-arrows"></i> <span class="skill-text">Change Management</span></li>
+            <li><i class="fa-solid fa-scale-balanced"></i> <span class="skill-text">Policy & Compliance</span></li>
+            <li><i class="fa-solid fa-file-invoice-dollar"></i> <span class="skill-text">Budget Planning</span></li>
+            <li><i class="fa-solid fa-language"></i> <span class="skill-text">Cross-Cultural Leadership</span></li>
+        </ul>
+
+        <h3 class="reveal-on-scroll">Humanitarian & Crisis HR</h3>
+        <ul class="skill-list reveal-on-scroll">
+            <li><i class="fa-solid fa-bell"></i> <span class="skill-text">Emergency Staffing</span></li>
+            <li><i class="fa-solid fa-shield-halved"></i> <span class="skill-text">Security & Evacuation</span></li>
+            <li><i class="fa-solid fa-hand-holding-heart"></i> <span class="skill-text">Staff Welfare</span></li>
+            <li><i class="fa-solid fa-earth-africa"></i> <span class="skill-text">Field Advisory</span></li>
+            <li><i class="fa-solid fa-users-viewfinder"></i> <span class="skill-text">Inter-Agency Coordination</span></li>
+        </ul>
+
+        <h3 class="reveal-on-scroll">International Recruitment</h3>
+        <ul class="skill-list reveal-on-scroll">
+            <li><i class="fa-solid fa-user-check"></i> <span class="skill-text">Competency-Based Selection</span></li>
+            <li><i class="fa-solid fa-plane-departure"></i> <span class="skill-text">Cross-Border Operations</span></li>
+            <li><i class="fa-solid fa-network-wired"></i> <span class="skill-text">UN Platforms (Inspira)</span></li>
+            <li><i class="fa-solid fa-user-group"></i> <span class="skill-text">Talent Pipelines</span></li>
+            <li><i class="fa-solid fa-chart-pie"></i> <span class="skill-text">Performance Management</span></li>
+        </ul>
+
+        <!-- ===== REDESIGNED Technical Expertise section with WORKDAY added ===== -->
+        <h2 class="reveal-on-scroll">Technical Expertise</h2>
+        <div class="tech-badge-container reveal-on-scroll">
+            <span class="tech-badge"><i class="fa-solid fa-cloud"></i> WORKDAY</span>
+            <span class="tech-badge"><i class="fa-solid fa-database"></i> UMOJA</span>
+            <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> MSRP</span>
+            <span class="tech-badge"><i class="fa-solid fa-magnifying-glass"></i> Inspira</span>
+            <span class="tech-badge"><i class="fa-solid fa-diagram-project"></i> IMIS</span>
+            <span class="tech-badge"><i class="fa-solid fa-table"></i> Advanced Excel</span>
+            <span class="tech-badge"><i class="fa-solid fa-chart-pie"></i> HR Analytics</span>
+        </div>
+
+        <div class="section-separator"></div>
+    </div>
+</section>
+
+<!-- Professional Experience Section - REDESIGNED -->
+<section id="experience" class="content-section">
+    <div class="container">
+        <h2 class="reveal-on-scroll">Professional Experience</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto; color: var(--color-text-muted);" class="reveal-on-scroll delay-100">
+            Over 15 years of progressive HR leadership in UN missions and humanitarian operations
+        </p>
+
+        <div class="experience-grid">
+            <!-- Experience Card 1 -->
+            <div class="exp-card reveal-on-scroll">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class="fa-solid fa-building-un"></i>
+                    </div>
+                    <div class="exp-title">
+                        <div class="exp-role">HR Associate</div>
+                        <div>
+                            <span class="exp-org">UNHCR</span>
+                            <span class="exp-period">2020 – Present</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-badge">Current Role</div>
+                <ul class="exp-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>National Recruitment Focal Point for Sudan Operations</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Alternative Assignment Committee Member</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Medical Evacuation Co-Coordinator</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Streamlined recruitment tracking systems across field offices</span></li>
+                </ul>
+                <div class="exp-footer">
+                    <span class="exp-tag"><i class="fa-regular fa-building" style="margin-right: 4px;"></i> Sudan</span>
+                </div>
+            </div>
+
+            <!-- Experience Card 2 -->
+            <div class="exp-card reveal-on-scroll delay-100">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="exp-title">
+                        <div class="exp-role">Senior HR Assistant</div>
+                        <div>
+                            <span class="exp-org">UNHCR</span>
+                            <span class="exp-period">2015 – 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="exp-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Managed full recruitment lifecycle for multiple staff categories</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Coordinated international staff onboarding & accreditation</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Administered medical insurance systems</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Improved medical claims processing efficiency</span></li>
+                </ul>
+                <div class="exp-footer">
+                    <span class="exp-tag"><i class="fa-regular fa-building" style="margin-right: 4px;"></i> Sudan</span>
+                </div>
+            </div>
+
+            <!-- Experience Card 3 -->
+            <div class="exp-card reveal-on-scroll delay-200">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <div class="exp-title">
+                        <div class="exp-role">HR Associate</div>
+                        <div>
+                            <span class="exp-org">MINUSCA</span>
+                            <span class="exp-period">2014</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="exp-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Processed high-volume recruitment for mission roles</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Coordinated complex visa & travel arrangements</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Managed candidate evaluation & roster systems</span></li>
+                </ul>
+                <div class="exp-footer">
+                    <span class="exp-tag"><i class="fa-regular fa-building" style="margin-right: 4px;"></i> CAR</span>
+                </div>
+            </div>
+
+            <!-- Experience Card 4 -->
+            <div class="exp-card reveal-on-scroll delay-300">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="exp-title">
+                        <div class="exp-role">HR Assistant</div>
+                        <div>
+                            <span class="exp-org">UNAMID</span>
+                            <span class="exp-period">2007 – 2015</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="exp-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Performance management & staff development coordination</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Training program design & delivery</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Financial monitoring & HR cost control</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Policy advisory across AU & UN frameworks</span></li>
+                </ul>
+                <div class="exp-footer">
+                    <span class="exp-tag"><i class="fa-regular fa-building" style="margin-right: 4px;"></i> Darfur</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-separator"></div>
+    </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education" class="content-section">
+    <div class="container">
+        <div class="edu-section-header reveal-on-scroll">
+            <h2>Education & Credentials</h2>
+            <p style="text-align: center; color: var(--color-text-muted); margin-top: 0.5rem;">A journey of academic excellence and professional certification.</p>
+        </div>
+
+        <div class="edu-layout-grid">
+            <!-- LEFT: Timeline -->
+            <div class="edu-main reveal-on-scroll delay-100">
+                <h3>Academic Background</h3>
+                <div class="edu-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-year">Graduate</span>
+                        <h4 class="timeline-degree">MBA – Business Management</h4>
+                        <p class="timeline-school">Augusta open university</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Postgraduate</span>
+                        <h4 class="timeline-degree">HR Management & Development</h4>
+                        <p class="timeline-school">Advanced Study</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Undergraduate</span>
+                        <h4 class="timeline-degree">Diploma – HR Management</h4>
+                        <p class="timeline-school">Professional Certification</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Bachelor</span>
+                        <h4 class="timeline-degree">BA – English Language</h4>
+                        <p class="timeline-school">University of Khartoum</p>
+                    </div>
+                </div>
+
+                <!-- UPDATED: Centered CIPD card -->
+                <div class="credential-card">
+                    <div class="credential-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="credential-info">
+                        <h4>CIPD Associate Membership</h4>
+                        <p style="margin:0; font-size: 0.9rem; color: #64748b;">Chartered Institute of Personnel and Development</p>
+                    </div>
+                </div>
+
+                <!-- UPDATED: Centered Specializations -->
+                <div class="specialization-container">
+                    <h3>Specializations</h3>
+                    <div class="tag-cloud">
+                        <span class="spec-tag">Humanitarian HR</span>
+                        <span class="spec-tag">Emergency Staffing</span>
+                        <span class="spec-tag">Talent Acquisition</span>
+                        <span class="spec-tag">Org Transformation</span>
+                        <span class="spec-tag">Performance Mgmt</span>
+                        <span class="spec-tag">Crisis Strategy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Philosophy -->
+            <div class="edu-sidebar reveal-on-scroll delay-200">
+                <div class="philosophy-card">
+                    <i class="fa-solid fa-quote-left" style="color: rgba(198, 161, 74, 0.2); font-size: 1.5rem; margin-bottom: 1rem;"></i>
+                    <p class="philosophy-text">
+                        Effective humanitarian operations depend on resilient, well-structured workforce systems. Strategic HR leadership is mission-critical infrastructure.
+                    </p>
+                    <span class="philosophy-author">— Munir Zakaria</span>
+                </div>
+
+                <h3>Languages</h3>
+                <div class="lang-grid">
+                    <div class="lang-card">
+                        <span class="lang-name">English</span>
+                        <span class="lang-level fluent">Fluent</span>
+                    </div>
+                    <div class="lang-card">
+                        <span class="lang-name">Arabic</span>
+                        <span class="lang-level fluent">Native</span>
+                    </div>
+                    <div class="lang-card">
+                        <span class="lang-name">French</span>
+                        <span class="lang-level intermediate">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="padding-bottom: 0;">
+        <div class="section-separator"></div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-wrapper" style="background-color: var(--bg-alt); padding-bottom: 5rem;">
+    <div class="container">
+        <div class="contact-content reveal-on-scroll">
+            <h2>Let’s Connect</h2>
+            <p style="text-align: center; color: var(--color-text-muted);">Open to Senior HR Leadership & Strategic Consulting Opportunities</p>
+
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto; color: #334155;">
+                I am available for senior roles and consulting engagements. If you are looking for strategic HR leadership to navigate complex workforce challenges, let's start a conversation.
+            </p>
+
+            <div class="contact-cards-grid">
+                <!-- Location Card -->
+                <div class="contact-card-item">
+                    <div class="contact-icon-large">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Port Sudan, Sudan</p>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card-item">
+                    <div class="contact-icon-large">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <a href="mailto:munirmoh@gmail.com">munirmoh@gmail.com</a>
+                </div>
+
+                <!-- Phone Card - UPDATED PHONE NUMBER -->
+                <div class="contact-card-item">
+                    <div class="contact-icon-large">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <a href="tel:+249912337844">+249 91 233 7844</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="mailto:munirmoh@gmail.com?subject=Consultation%20Request" class="btn btn-accent btn-lg">
+                    <i class="fa-regular fa-calendar-check"></i> Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REDESIGNED FOOTER SECTION -->
+<footer>
+    <div class="container">
+        <!-- Footer Grid Layout -->
+        <div class="footer-grid">
+            <!-- Column 1: Branding & Tagline -->
+            <div class="footer-brand">
+                <h3>Munir<span>Zakaria</span></h3>
+                <!-- TEXT UPDATED HERE AS REQUESTED -->
+                <p>
+                    Professional Human Resources, specializing in strategic workforce planning, crisis management, and international recruitment for humanitarian missions.
+                </p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-links-wrapper">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#profile"><i class="fa-solid fa-user"></i> Professional Profile</a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-lightbulb"></i> Expertise</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="footer-contact-wrapper">
+                <h4 class="footer-heading">Get in Touch</h4>
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span style="color: rgba(255,255,255,0.7);">munirmoh@gmail.com</span>
+                </div>
+                <!-- UPDATED PHONE NUMBER IN FOOTER -->
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span style="color: rgba(255,255,255,0.7);">+249 91 233 7844</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span style="color: rgba(255,255,255,0.7);">Port Sudan, Sudan</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 Munir Zakaria. All Rights Reserved.</p>
+            
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/munir-zakaria-flnstpm-603318a8/?locale=%3D" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:munirmoh@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Toast Notification (Removed functionality but kept element in case needed later or JS cleaner, can delete) -->
+<!-- Keeping JS minimal as requested -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const hamburger = document.getElementById('hamburgerBtn');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function toggleMenu() {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            if (!isExpanded) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', toggleMenu);
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        }
+
+        const navbar = document.querySelector('.navbar');
+        let ticking = false;
+
+        function updateNavbar() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        }, { passive: true });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        const scrollElements = document.querySelectorAll('.reveal-on-scroll');
+        scrollElements.forEach(el => observer.observe(el));
+    });
+</script>
+
+</body>
+</html>
